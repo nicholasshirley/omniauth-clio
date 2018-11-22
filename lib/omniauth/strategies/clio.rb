@@ -9,7 +9,9 @@ module OmniAuth
         :site => 'https://app.clio.com',
         :authorize_url => '/oauth/authorize',
         :token_url => '/oauth/token',
-        :redirect_uri => 'http://localhost:3000/users/auth/clio/callback'
+        :redirect_uri => 'http://localhost:3000/users/auth/clio/callback',
+        :client_id => 'YcWeCCqr1rGBPYHvKp79qT2XlUmILa6GRPaiwjvr',
+        :client_secret => 'PMs9DZiJxHA1BBE8so5v8VbQnbib7gOXu5bRL3zW'
       }
 
       uid { raw_info['user']['id']}
