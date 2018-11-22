@@ -9,7 +9,7 @@ module OmniAuth
         :site => 'https://app.clio.com',
         :authorize_url => '/oauth/authorize',
         :token_url => '/oauth/token',
-        :redirect_uri => 'http://localhost:3000/users/auth/clio/callback',
+        :redirect_uri => 'https://app.clio.com/oauth/token',
       }
 
       option :token_params, {
