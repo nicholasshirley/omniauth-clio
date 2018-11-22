@@ -6,11 +6,11 @@ module OmniAuth
       option :name, "clio"
 
       option :client_options, {
-        :site => 'https://app.goclio.com',
+        :site => 'https://app.clio.com',
         :authorize_url => '/oauth/authorize',
         :token_url => '/oauth/token'
       }
-      
+
       uid { raw_info['user']['id']}
 
       info do
@@ -27,7 +27,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/api/v1/users/who_am_i').parsed
+        @raw_info ||= access_token.get('/api/v4/users/who_am_i').parsed
       end
     end
   end
