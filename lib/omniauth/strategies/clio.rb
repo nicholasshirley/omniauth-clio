@@ -8,7 +8,8 @@ module OmniAuth
       option :client_options, {
         :site => 'https://app.clio.com',
         :authorize_url => '/oauth/authorize',
-        :token_url => '/oauth/token'
+        :token_url => '/oauth/token',
+        :redirect_uri => 'http://localhost:3000'
       }
 
       uid { raw_info['user']['id']}
