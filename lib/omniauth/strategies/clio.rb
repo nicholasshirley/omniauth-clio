@@ -12,6 +12,13 @@ module OmniAuth
         :redirect_uri => 'http://localhost:3000/users/auth/clio/callback',
       }
 
+      option :token_params, {
+        client_id: 'YcWeCCqr1rGBPYHvKp79qT2XlUmILa6GRPaiwjvr',
+        client_secret: 'PMs9DZiJxHA1BBE8so5v8VbQnbib7gOXu5bRL3zW',
+        grant_type: 'authorization_code',
+        redirect_uri: 'http://localhost:3000/users/auth/clio/callback',
+      }
+
       uid { raw_info['user']['id']}
 
       info do
